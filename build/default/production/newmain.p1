@@ -1,0 +1,682 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"7 ./keypad.h
+[; ;./keypad.h: 7:     void zeraKey(void);
+[v _zeraKey `(v ~T0 @X0 0 ef ]
+"5
+[; ;./keypad.h: 5:  void kpDebounce(void);
+[v _kpDebounce `(v ~T0 @X0 0 ef ]
+"4
+[; ;./keypad.h: 4:     char kpReadKey(void);
+[v _kpReadKey `(uc ~T0 @X0 0 ef ]
+"4 ./lcd.h
+[; ;./lcd.h: 4:   void lcdChar(char value);
+[v _lcdChar `(v ~T0 @X0 0 ef1`uc ]
+"22 ./ssd.h
+[; ;./ssd.h: 22:  void ssdDigit(char val, char pos);
+[v _ssdDigit `(v ~T0 @X0 0 ef2`uc`uc ]
+"23
+[; ;./ssd.h: 23:  void ssdUpdate(void);
+[v _ssdUpdate `(v ~T0 @X0 0 ef ]
+[p mainexit ]
+"27 ./timer.h
+[; ;./timer.h: 27:  void timerInit(void);
+[v _timerInit `(v ~T0 @X0 0 ef ]
+"8 ./lcd.h
+[; ;./lcd.h: 8:   void lcdInit(void);
+[v _lcdInit `(v ~T0 @X0 0 ef ]
+"6 ./keypad.h
+[; ;./keypad.h: 6:  void kpInit(void);
+[v _kpInit `(v ~T0 @X0 0 ef ]
+"25 ./pwm.h
+[; ;./pwm.h: 25:  void pwmInit(void);
+[v _pwmInit `(v ~T0 @X0 0 ef ]
+"24 ./ssd.h
+[; ;./ssd.h: 24:  void ssdInit(void);
+[v _ssdInit `(v ~T0 @X0 0 ef ]
+"3 ./lcd.h
+[; ;./lcd.h: 3:   void lcdCommand(char value);
+[v _lcdCommand `(v ~T0 @X0 0 ef1`uc ]
+"7
+[; ;./lcd.h: 7:   void lcdPosition(int line, int col);
+[v _lcdPosition `(v ~T0 @X0 0 ef2`i`i ]
+"5
+[; ;./lcd.h: 5:   void lcdString(char msg[]);
+[v _lcdString `(v ~T0 @X0 0 ef1`*uc ]
+"24 ./pwm.h
+[; ;./pwm.h: 24:  void pwmFrequency(unsigned int freq);
+[v _pwmFrequency `(v ~T0 @X0 0 ef1`ui ]
+"23
+[; ;./pwm.h: 23:  void pwmSet(unsigned char porcento);
+[v _pwmSet `(v ~T0 @X0 0 ef1`uc ]
+"16 newmain.c
+[; ;newmain.c: 16: const char User[] = "ULDR";
+[v _User `Cuc ~T0 @X0 -> 5 `i e ]
+[i _User
+:U ..
+-> 85 `c
+-> 76 `c
+-> 68 `c
+-> 82 `c
+-> 0 `c
+..
+]
+"17
+[; ;newmain.c: 17: const char Passw[] = "ULDR";
+[v _Passw `Cuc ~T0 @X0 -> 5 `i e ]
+[i _Passw
+:U ..
+-> 85 `c
+-> 76 `c
+-> 68 `c
+-> 82 `c
+-> 0 `c
+..
+]
+"18
+[; ;newmain.c: 18: char savU[5] = {0};
+[v _savU `uc ~T0 @X0 -> 5 `i e ]
+[i _savU
+:U ..
+-> -> 0 `i `uc
+..
+]
+"19
+[; ;newmain.c: 19: char savP[5] = {0};
+[v _savP `uc ~T0 @X0 -> 5 `i e ]
+[i _savP
+:U ..
+-> -> 0 `i `uc
+..
+]
+"21
+[; ;newmain.c: 21: char pegaUser() {
+[v _pegaUser `(uc ~T0 @X0 1 ef ]
+{
+[e :U _pegaUser ]
+[f ]
+"22
+[; ;newmain.c: 22:     static volatile char i = 0;
+[v F39 `Vuc ~T0 @X0 1 s i ]
+[i F39
+-> -> 0 `i `uc
+]
+"23
+[; ;newmain.c: 23:     zeraKey();
+[e ( _zeraKey ..  ]
+"24
+[; ;newmain.c: 24:     kpDebounce();
+[e ( _kpDebounce ..  ]
+"25
+[; ;newmain.c: 25:     if (kpReadKey() != 0) {
+[e $ ! != -> ( _kpReadKey ..  `i -> 0 `i 2  ]
+{
+"26
+[; ;newmain.c: 26:         savU[i] = kpReadKey();
+[e = *U + &U _savU * -> F39 `ux -> -> # *U &U _savU `ui `ux ( _kpReadKey ..  ]
+"27
+[; ;newmain.c: 27:         lcdChar(savU[i]);
+[e ( _lcdChar (1 *U + &U _savU * -> F39 `ux -> -> # *U &U _savU `ui `ux ]
+"28
+[; ;newmain.c: 28:         i++;
+[e ++ F39 -> -> 1 `i `Vuc ]
+"29
+[; ;newmain.c: 29:         if (i == 4) {
+[e $ ! == -> F39 `i -> 4 `i 3  ]
+{
+"30
+[; ;newmain.c: 30:             i = 0;
+[e = F39 -> -> 0 `i `uc ]
+"31
+[; ;newmain.c: 31:             return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 1  ]
+"32
+[; ;newmain.c: 32:         }
+}
+[e :U 3 ]
+"34
+[; ;newmain.c: 34:     }
+}
+[e :U 2 ]
+"35
+[; ;newmain.c: 35:     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1  ]
+"36
+[; ;newmain.c: 36: }
+[e :UE 1 ]
+}
+"38
+[; ;newmain.c: 38: char pegaSenha() {
+[v _pegaSenha `(uc ~T0 @X0 1 ef ]
+{
+[e :U _pegaSenha ]
+[f ]
+"39
+[; ;newmain.c: 39:     static volatile char j = 0;
+[v F41 `Vuc ~T0 @X0 1 s j ]
+[i F41
+-> -> 0 `i `uc
+]
+"40
+[; ;newmain.c: 40:     zeraKey();
+[e ( _zeraKey ..  ]
+"41
+[; ;newmain.c: 41:     kpDebounce();
+[e ( _kpDebounce ..  ]
+"42
+[; ;newmain.c: 42:     if (kpReadKey() != 0) {
+[e $ ! != -> ( _kpReadKey ..  `i -> 0 `i 5  ]
+{
+"43
+[; ;newmain.c: 43:         savP[j] = kpReadKey();
+[e = *U + &U _savP * -> F41 `ux -> -> # *U &U _savP `ui `ux ( _kpReadKey ..  ]
+"44
+[; ;newmain.c: 44:         lcdChar(savP[j]);
+[e ( _lcdChar (1 *U + &U _savP * -> F41 `ux -> -> # *U &U _savP `ui `ux ]
+"45
+[; ;newmain.c: 45:         j++;
+[e ++ F41 -> -> 1 `i `Vuc ]
+"46
+[; ;newmain.c: 46:         if (j == 4) {
+[e $ ! == -> F41 `i -> 4 `i 6  ]
+{
+"47
+[; ;newmain.c: 47:             j = 0;
+[e = F41 -> -> 0 `i `uc ]
+"48
+[; ;newmain.c: 48:             return 3;
+[e ) -> -> 3 `i `uc ]
+[e $UE 4  ]
+"49
+[; ;newmain.c: 49:         }
+}
+[e :U 6 ]
+"51
+[; ;newmain.c: 51:     }
+}
+[e :U 5 ]
+"52
+[; ;newmain.c: 52:     return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 4  ]
+"53
+[; ;newmain.c: 53: }
+[e :UE 4 ]
+}
+"55
+[; ;newmain.c: 55: char comp() {
+[v _comp `(uc ~T0 @X0 1 ef ]
+{
+[e :U _comp ]
+[f ]
+"56
+[; ;newmain.c: 56:     char c = 0;
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c -> -> 0 `i `uc ]
+"57
+[; ;newmain.c: 57:     for (char a = 0; a < 4; a++) {
+{
+[v _a `uc ~T0 @X0 1 a ]
+[e = _a -> -> 0 `i `uc ]
+[e $ < -> _a `i -> 4 `i 8  ]
+[e $U 9  ]
+[e :U 8 ]
+{
+"58
+[; ;newmain.c: 58:         if ((savU[a] == User[a]) && (savP[a] == Passw[a])) {
+[e $ ! && == -> *U + &U _savU * -> _a `ux -> -> # *U &U _savU `ui `ux `i -> *U + &U _User * -> _a `ux -> -> # *U &U _User `ui `ux `i == -> *U + &U _savP * -> _a `ux -> -> # *U &U _savP `ui `ux `i -> *U + &U _Passw * -> _a `ux -> -> # *U &U _Passw `ui `ux `i 11  ]
+{
+"59
+[; ;newmain.c: 59:             c++;
+[e ++ _c -> -> 1 `i `uc ]
+"60
+[; ;newmain.c: 60:         }
+}
+[e :U 11 ]
+"61
+[; ;newmain.c: 61:     }
+}
+[e ++ _a -> -> 1 `i `uc ]
+[e $ < -> _a `i -> 4 `i 8  ]
+[e :U 9 ]
+}
+"63
+[; ;newmain.c: 63:     if (c == 4) {
+[e $ ! == -> _c `i -> 4 `i 12  ]
+{
+"64
+[; ;newmain.c: 64:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 7  ]
+"65
+[; ;newmain.c: 65:     } else {
+}
+[e $U 13  ]
+[e :U 12 ]
+{
+"66
+[; ;newmain.c: 66:         return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 7  ]
+"67
+[; ;newmain.c: 67:     }
+}
+[e :U 13 ]
+"68
+[; ;newmain.c: 68: }
+[e :UE 7 ]
+}
+"70
+[; ;newmain.c: 70: void limpaSSD() {
+[v _limpaSSD `(v ~T0 @X0 1 ef ]
+{
+[e :U _limpaSSD ]
+[f ]
+"71
+[; ;newmain.c: 71:     ssdDigit(0, 0);
+[e ( _ssdDigit (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"72
+[; ;newmain.c: 72:     ssdDigit(0, 1);
+[e ( _ssdDigit (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"73
+[; ;newmain.c: 73:     ssdDigit(0, 2);
+[e ( _ssdDigit (2 , -> -> 0 `i `uc -> -> 2 `i `uc ]
+"74
+[; ;newmain.c: 74:     ssdDigit(0, 3);
+[e ( _ssdDigit (2 , -> -> 0 `i `uc -> -> 3 `i `uc ]
+"75
+[; ;newmain.c: 75:     for (volatile char k = 0; k < 5; k++) {
+{
+[v _k `Vuc ~T0 @X0 1 a ]
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 5 `i 15  ]
+[e $U 16  ]
+[e :U 15 ]
+{
+"76
+[; ;newmain.c: 76:         ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"77
+[; ;newmain.c: 77:     }
+}
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 5 `i 15  ]
+[e :U 16 ]
+}
+"78
+[; ;newmain.c: 78: }
+[e :UE 14 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"80
+[; ;newmain.c: 80: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"81
+[; ;newmain.c: 81:     timerInit();
+[e ( _timerInit ..  ]
+"82
+[; ;newmain.c: 82:     lcdInit();
+[e ( _lcdInit ..  ]
+"83
+[; ;newmain.c: 83:     kpInit();
+[e ( _kpInit ..  ]
+"84
+[; ;newmain.c: 84:     pwmInit();
+[e ( _pwmInit ..  ]
+"85
+[; ;newmain.c: 85:     ssdInit();
+[e ( _ssdInit ..  ]
+"87
+[; ;newmain.c: 87:     char conf = 0;
+[v _conf `uc ~T0 @X0 1 a ]
+[e = _conf -> -> 0 `i `uc ]
+"88
+[; ;newmain.c: 88:     int cnt;
+[v _cnt `i ~T0 @X0 1 a ]
+"89
+[; ;newmain.c: 89:     volatile float k;
+[v _k `Vf ~T0 @X0 1 a ]
+"90
+[; ;newmain.c: 90:     limpaSSD();
+[e ( _limpaSSD ..  ]
+"91
+[; ;newmain.c: 91:     for (;;) {
+{
+[e :U 19 ]
+{
+"92
+[; ;newmain.c: 92:         ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"94
+[; ;newmain.c: 94:         switch (conf) {
+[e $U 23  ]
+{
+"95
+[; ;newmain.c: 95:             case 0:
+[e :U 24 ]
+"96
+[; ;newmain.c: 96:                 lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"97
+[; ;newmain.c: 97:                 lcdPosition(0, 0);
+[e ( _lcdPosition (2 , -> 0 `i -> 0 `i ]
+"98
+[; ;newmain.c: 98:                 lcdString("User: ");
+[e ( _lcdString (1 :s 1C ]
+"99
+[; ;newmain.c: 99:                 lcdPosition(1, 0);
+[e ( _lcdPosition (2 , -> 1 `i -> 0 `i ]
+"100
+[; ;newmain.c: 100:                 lcdString("Senha: ");
+[e ( _lcdString (1 :s 2C ]
+"101
+[; ;newmain.c: 101:                 lcdPosition(0, 6);
+[e ( _lcdPosition (2 , -> 0 `i -> 6 `i ]
+"102
+[; ;newmain.c: 102:                 conf = 1;
+[e = _conf -> -> 1 `i `uc ]
+"103
+[; ;newmain.c: 103:                 break;
+[e $U 22  ]
+"105
+[; ;newmain.c: 105:             case 1:
+[e :U 25 ]
+"106
+[; ;newmain.c: 106:                 conf = pegaUser();
+[e = _conf ( _pegaUser ..  ]
+"107
+[; ;newmain.c: 107:                 ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"108
+[; ;newmain.c: 108:                 if (conf == 2) {
+[e $ ! == -> _conf `i -> 2 `i 26  ]
+{
+"109
+[; ;newmain.c: 109:                     lcdPosition(1, 7);
+[e ( _lcdPosition (2 , -> 1 `i -> 7 `i ]
+"110
+[; ;newmain.c: 110:                 }
+}
+[e :U 26 ]
+"111
+[; ;newmain.c: 111:                 break;
+[e $U 22  ]
+"113
+[; ;newmain.c: 113:             case 2:
+[e :U 27 ]
+"114
+[; ;newmain.c: 114:                 conf = pegaSenha();
+[e = _conf ( _pegaSenha ..  ]
+"115
+[; ;newmain.c: 115:                 ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"116
+[; ;newmain.c: 116:                 if (conf == 3) {
+[e $ ! == -> _conf `i -> 3 `i 28  ]
+{
+"117
+[; ;newmain.c: 117:                     lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"118
+[; ;newmain.c: 118:                 }
+}
+[e :U 28 ]
+"119
+[; ;newmain.c: 119:                 break;
+[e $U 22  ]
+"121
+[; ;newmain.c: 121:             case 3:
+[e :U 29 ]
+"122
+[; ;newmain.c: 122:                 if (comp()) {
+[e $ ! != -> ( _comp ..  `i -> 0 `i 30  ]
+{
+"123
+[; ;newmain.c: 123:                     conf = 4;
+[e = _conf -> -> 4 `i `uc ]
+"124
+[; ;newmain.c: 124:                 } else {
+}
+[e $U 31  ]
+[e :U 30 ]
+{
+"125
+[; ;newmain.c: 125:                     conf = 5;
+[e = _conf -> -> 5 `i `uc ]
+"126
+[; ;newmain.c: 126:                     ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"127
+[; ;newmain.c: 127:                     lcdPosition(0, 0);
+[e ( _lcdPosition (2 , -> 0 `i -> 0 `i ]
+"128
+[; ;newmain.c: 128:                     lcdString("Entrada");
+[e ( _lcdString (1 :s 3C ]
+"129
+[; ;newmain.c: 129:                     lcdPosition(1, 0);
+[e ( _lcdPosition (2 , -> 1 `i -> 0 `i ]
+"130
+[; ;newmain.c: 130:                     lcdString("invalida!!");
+[e ( _lcdString (1 :s 4C ]
+"131
+[; ;newmain.c: 131:                 }
+}
+[e :U 31 ]
+"132
+[; ;newmain.c: 132:                 break;
+[e $U 22  ]
+"134
+[; ;newmain.c: 134:             case 4:
+[e :U 32 ]
+"135
+[; ;newmain.c: 135:                 lcdPosition(0, 2);
+[e ( _lcdPosition (2 , -> 0 `i -> 2 `i ]
+"136
+[; ;newmain.c: 136:                 lcdString("Bem-Vindo(a)");
+[e ( _lcdString (1 :s 5C ]
+"137
+[; ;newmain.c: 137:                 pwmFrequency(5000);
+[e ( _pwmFrequency (1 -> -> 5000 `i `ui ]
+"138
+[; ;newmain.c: 138:                 pwmSet(50);
+[e ( _pwmSet (1 -> -> 50 `i `uc ]
+"139
+[; ;newmain.c: 139:                 for (cnt = 3601; cnt > 0; cnt--) {
+{
+[e = _cnt -> 3601 `i ]
+[e $ > _cnt -> 0 `i 33  ]
+[e $U 34  ]
+[e :U 33 ]
+{
+"140
+[; ;newmain.c: 140:                     if (cnt == 3600 || cnt == 100) {
+[e $ ! || == _cnt -> 3600 `i == _cnt -> 100 `i 36  ]
+{
+"141
+[; ;newmain.c: 141:                         pwmSet(100);
+[e ( _pwmSet (1 -> -> 100 `i `uc ]
+"142
+[; ;newmain.c: 142:                     } else if (cnt == 3500 || cnt == 1) {
+}
+[e $U 37  ]
+[e :U 36 ]
+[e $ ! || == _cnt -> 3500 `i == _cnt -> 1 `i 38  ]
+{
+"143
+[; ;newmain.c: 143:                         pwmSet(0);
+[e ( _pwmSet (1 -> -> 0 `i `uc ]
+"144
+[; ;newmain.c: 144:                     }
+}
+[e :U 38 ]
+[e :U 37 ]
+"145
+[; ;newmain.c: 145:                     ssdDigit((cnt / 60) % 10, 3);
+[e ( _ssdDigit (2 , -> % / _cnt -> 60 `i -> 10 `i `uc -> -> 3 `i `uc ]
+"146
+[; ;newmain.c: 146:                     ssdDigit((cnt / 600) % 6, 2);
+[e ( _ssdDigit (2 , -> % / _cnt -> 600 `i -> 6 `i `uc -> -> 2 `i `uc ]
+"147
+[; ;newmain.c: 147:                     ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"148
+[; ;newmain.c: 148:                     for (k = 0; k < 55; k++);
+{
+[e = _k -> -> 0 `i `f ]
+[e $ < _k -> -> 55 `i `f 39  ]
+[e $U 40  ]
+[e :U 39 ]
+[e ++ _k -> -> 1 `i `Vf ]
+[e $ < _k -> -> 55 `i `f 39  ]
+[e :U 40 ]
+}
+"149
+[; ;newmain.c: 149:                 }
+}
+[e -- _cnt -> 1 `i ]
+[e $ > _cnt -> 0 `i 33  ]
+[e :U 34 ]
+}
+"151
+[; ;newmain.c: 151:                 pwmSet(0);
+[e ( _pwmSet (1 -> -> 0 `i `uc ]
+"152
+[; ;newmain.c: 152:                 conf = 0;
+[e = _conf -> -> 0 `i `uc ]
+"153
+[; ;newmain.c: 153:                 break;
+[e $U 22  ]
+"155
+[; ;newmain.c: 155:             case 5:
+[e :U 42 ]
+"157
+[; ;newmain.c: 157:                 for (cnt = 550; cnt > 0; cnt--) {
+{
+[e = _cnt -> 550 `i ]
+[e $ > _cnt -> 0 `i 43  ]
+[e $U 44  ]
+[e :U 43 ]
+{
+"158
+[; ;newmain.c: 158:                     if (cnt == 550 || cnt == 100) {
+[e $ ! || == _cnt -> 550 `i == _cnt -> 100 `i 46  ]
+{
+"159
+[; ;newmain.c: 159:                         pwmSet(100);
+[e ( _pwmSet (1 -> -> 100 `i `uc ]
+"160
+[; ;newmain.c: 160:                     } else if (cnt == 450 || cnt == 1) {
+}
+[e $U 47  ]
+[e :U 46 ]
+[e $ ! || == _cnt -> 450 `i == _cnt -> 1 `i 48  ]
+{
+"161
+[; ;newmain.c: 161:                         pwmSet(0);
+[e ( _pwmSet (1 -> -> 0 `i `uc ]
+"162
+[; ;newmain.c: 162:                     }
+}
+[e :U 48 ]
+[e :U 47 ]
+"163
+[; ;newmain.c: 163:                     ssdDigit((cnt / 100) % 10, 3);
+[e ( _ssdDigit (2 , -> % / _cnt -> 100 `i -> 10 `i `uc -> -> 3 `i `uc ]
+"164
+[; ;newmain.c: 164:                     ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"165
+[; ;newmain.c: 165:                     for (k = 0; k < 25; k++);
+{
+[e = _k -> -> 0 `i `f ]
+[e $ < _k -> -> 25 `i `f 49  ]
+[e $U 50  ]
+[e :U 49 ]
+[e ++ _k -> -> 1 `i `Vf ]
+[e $ < _k -> -> 25 `i `f 49  ]
+[e :U 50 ]
+}
+"166
+[; ;newmain.c: 166:                 }
+}
+[e -- _cnt -> 1 `i ]
+[e $ > _cnt -> 0 `i 43  ]
+[e :U 44 ]
+}
+"167
+[; ;newmain.c: 167:                 pwmSet(0);
+[e ( _pwmSet (1 -> -> 0 `i `uc ]
+"168
+[; ;newmain.c: 168:                 lcdCommand(0x01);
+[e ( _lcdCommand (1 -> -> 1 `i `uc ]
+"169
+[; ;newmain.c: 169:                 conf = 0;
+[e = _conf -> -> 0 `i `uc ]
+"171
+[; ;newmain.c: 171:                 break;
+[e $U 22  ]
+"172
+[; ;newmain.c: 172:         }
+}
+[e $U 22  ]
+[e :U 23 ]
+[e [\ -> _conf `i , $ -> 0 `i 24
+ , $ -> 1 `i 25
+ , $ -> 2 `i 27
+ , $ -> 3 `i 29
+ , $ -> 4 `i 32
+ , $ -> 5 `i 42
+ 22 ]
+[e :U 22 ]
+"173
+[; ;newmain.c: 173:         limpaSSD();
+[e ( _limpaSSD ..  ]
+"174
+[; ;newmain.c: 174:         for (k = 0; k < 12; k++) {
+{
+[e = _k -> -> 0 `i `f ]
+[e $ < _k -> -> 12 `i `f 52  ]
+[e $U 53  ]
+[e :U 52 ]
+{
+"175
+[; ;newmain.c: 175:             ssdUpdate();
+[e ( _ssdUpdate ..  ]
+"176
+[; ;newmain.c: 176:             for (volatile float u = 0; u < 10; u++);
+{
+[v _u `Vf ~T0 @X0 1 a ]
+[e = _u -> -> 0 `i `f ]
+[e $ < _u -> -> 10 `i `f 55  ]
+[e $U 56  ]
+[e :U 55 ]
+[e ++ _u -> -> 1 `i `Vf ]
+[e $ < _u -> -> 10 `i `f 55  ]
+[e :U 56 ]
+}
+"177
+[; ;newmain.c: 177:         }
+}
+[e ++ _k -> -> 1 `i `Vf ]
+[e $ < _k -> -> 12 `i `f 52  ]
+[e :U 53 ]
+}
+"178
+[; ;newmain.c: 178:     }
+}
+[e $U 19  ]
+[e :U 20 ]
+}
+"179
+[; ;newmain.c: 179: }
+[e :UE 18 ]
+}
+[a 3C 69 110 116 114 97 100 97 0 ]
+[a 5C 66 101 109 45 86 105 110 100 111 40 97 41 0 ]
+[a 4C 105 110 118 97 108 105 100 97 33 33 0 ]
+[a 1C 85 115 101 114 58 32 0 ]
+[a 2C 83 101 110 104 97 58 32 0 ]

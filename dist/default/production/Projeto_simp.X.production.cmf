@@ -1,0 +1,1249 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/default/production\Projeto_simp.X.production.o
+cinit CODE 0 2534 2534 16 1
+idloc IDLOC 5 200000 200000 8 1
+text0 CODE 0 656 656 65A 1
+text1 CODE 0 2554 2554 8 1
+text2 CODE 0 21B6 21B6 56 1
+text3 CODE 0 1FD4 1FD4 6C 1
+text4 CODE 0 246C 246C 26 1
+text5 CODE 0 1F60 1F60 74 1
+text6 CODE 0 251A 251A 1A 1
+text7 CODE 0 2492 2492 26 1
+text8 CODE 0 1A18 1A18 10C 1
+text9 CODE 0 2040 2040 62 1
+text10 CODE 0 20A2 20A2 62 1
+text11 CODE 0 254A 254A A 1
+text12 CODE 0 1EE8 1EE8 78 1
+text13 CODE 0 18E2 18E2 136 1
+text14 CODE 0 1778 1778 16A 1
+text15 CODE 0 22B0 22B0 4C 1
+text16 CODE 0 160C 160C 16C 1
+text17 CODE 0 215E 215E 58 1
+text18 CODE 0 220C 220C 56 1
+text19 CODE 0 24DE 24DE 1E 1
+text20 CODE 0 237C 237C 3A 1
+text21 CODE 0 1CEC 1CEC B4 1
+text22 CODE 0 24B8 24B8 26 1
+text23 CODE 0 24FC 24FC 1E 1
+text24 CODE 0 2104 2104 5A 1
+text25 CODE 0 2262 2262 4E 1
+text26 CODE 0 2418 2418 2A 1
+text27 CODE 0 2442 2442 2A 1
+text28 CODE 0 22FC 22FC 42 1
+text29 CODE 0 1170 1170 24E 1
+text30 CODE 0 255C 255C 2 1
+text31 CODE 0 23E8 23E8 30 1
+text32 CODE 0 23B6 23B6 32 1
+text33 CODE 0 233E 233E 3E 1
+text34 CODE 0 13BE 13BE 24E 1
+text35 CODE 0 1E50 1E50 98 1
+text36 CODE 0 1B24 1B24 104 1
+text37 CODE 0 CB0 CB0 4C0 1
+text38 CODE 0 1DA0 1DA0 B0 1
+text39 CODE 0 1C28 1C28 C4 1
+cstackCOMRAM COMRAM 1 1 1 21 1
+smallconst SMALLCONST 0 600 600 56 1
+bssCOMRAM COMRAM 1 22 22 18 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST 255E-7FFF 1
+STACK 80-5FF 1
+SMALLCONST 255E-7FFF 1
+CODE 4-5FF 1
+CODE 255E-7FFF 1
+BIGRAM 3A-5FF 1
+COMRAM 3A-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 255E-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Projeto_simp.X.production.o
+1C28 text39 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C28 text39 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C2C text39 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C3A text39 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C42 text39 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C46 text39 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C54 text39 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C5C text39 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C60 text39 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C68 text39 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C7A text39 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C7E text39 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C82 text39 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C88 text39 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C8A text39 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C98 text39 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1C9E text39 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CB4 text39 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CBC text39 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CBE text39 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CC4 text39 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CCA text39 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CDA text39 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CE2 text39 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1CEA text39 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1DA0 text38 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DA0 text38 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DA4 text38 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DB2 text38 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DBA text38 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DBE text38 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DCC text38 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DD4 text38 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DE6 text38 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DEA text38 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DEE text38 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DF4 text38 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1DF6 text38 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E04 text38 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E1A text38 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E22 text38 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E28 text38 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E2E text38 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E3E text38 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E46 text38 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1E4E text38 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+CB0 text37 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CB0 text37 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CB6 text37 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CBC text37 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CCA text37 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CCC text37 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CDC text37 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CEC text37 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CFC text37 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+CFE text37 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D02 text37 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D06 text37 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D16 text37 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D1C text37 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D2E text37 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D30 text37 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D36 text37 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D44 text37 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D46 text37 CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D56 text37 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D66 text37 CODE >59:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D76 text37 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D78 text37 CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D7C text37 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D80 text37 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+D90 text37 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DA2 text37 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DB0 text37 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DB4 text37 CODE >81:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DB8 text37 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DBC text37 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DC0 text37 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DC4 text37 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DC8 text37 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DCC text37 CODE >87:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DD0 text37 CODE >88:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DD4 text37 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DD8 text37 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DDC text37 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DE0 text37 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DE4 text37 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DE8 text37 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DEC text37 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DF0 text37 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+DF4 text37 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E1E text37 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E3A text37 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E4A text37 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E4E text37 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E52 text37 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E52 text37 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E60 text37 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E68 text37 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E6C text37 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E70 text37 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E7E text37 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E80 text37 CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E8A text37 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E8C text37 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E8C text37 CODE >120:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E9E text37 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+E9E text37 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+EAC text37 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+EBC text37 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+ED0 text37 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+EE0 text37 CODE >134:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+EEE text37 CODE >135:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+EFC text37 CODE >136:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F04 text37 CODE >137:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F08 text37 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F0C text37 CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F1A text37 CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F1C text37 CODE >144:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F26 text37 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F2C text37 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F52 text37 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F82 text37 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F86 text37 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F88 text37 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+F98 text37 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FA8 text37 CODE >162:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FB8 text37 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FB8 text37 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FDE text37 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FF2 text37 CODE >172:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+FFC text37 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+100A text37 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+100C text37 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+101A text37 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+101E text37 CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1022 text37 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1026 text37 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1036 text37 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1038 text37 CODE >171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1046 text37 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+104A text37 CODE >193:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1058 text37 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+106E text37 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1072 text37 CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1076 text37 CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1076 text37 CODE >198:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1088 text37 CODE >202:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1088 text37 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1098 text37 CODE >204:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+10A4 text37 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+10B2 text37 CODE >206:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+10DC text37 CODE >207:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+10EC text37 CODE >208:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+10EE text37 CODE >215:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+110E text37 CODE >216:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+111E text37 CODE >218:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+112E text37 CODE >219:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1132 text37 CODE >225:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1140 text37 CODE >226:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1142 text37 CODE >227:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1146 text37 CODE >230:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1148 text37 CODE >232:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+114E text37 CODE >233:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+115C text37 CODE >234:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+115E text37 CODE >236:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+116E text37 CODE >237:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1B24 text36 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1B24 text36 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1B52 text36 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1B62 text36 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1B90 text36 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BA0 text36 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BAE text36 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BC0 text36 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BCE text36 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BE0 text36 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1BF0 text36 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1C00 text36 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1C26 text36 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1E50 text35 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1E50 text35 CODE >56:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1E54 text35 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1E58 text35 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EB8 text35 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EBA text35 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EBA text35 CODE >61:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1ECC text35 CODE >63:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EDE text35 CODE >64:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EE4 text35 CODE >66:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1EE6 text35 CODE >68:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+13BE text34 CODE >54:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+13BE text34 CODE >56:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+13DA text34 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+140C text34 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+142E text34 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+144A text34 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1480 text34 CODE >61:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+14A6 text34 CODE >62:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+14C2 text34 CODE >63:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+14F8 text34 CODE >64:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+151E text34 CODE >65:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+153A text34 CODE >66:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1570 text34 CODE >67:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1596 text34 CODE >68:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+15B2 text34 CODE >69:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+15E8 text34 CODE >70:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+160A text34 CODE >73:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+233E text33 CODE >3:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+233E text33 CODE >4:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2352 text33 CODE >5:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2366 text33 CODE >6:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+237A text33 CODE >7:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+23B6 text32 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23B6 text32 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23BA text32 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23CE text32 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23E2 text32 CODE >61:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23E6 text32 CODE >62:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+23E8 text31 CODE >10:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+23E8 text31 CODE >12:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+23F4 text31 CODE >15:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2416 text31 CODE >16:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+255C text30 CODE >5:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+255C text30 CODE >9:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1170 text29 CODE >14:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1170 text29 CODE >16:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+118C text29 CODE >17:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+11BE text29 CODE >18:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+11E0 text29 CODE >19:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+11FC text29 CODE >20:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1204 text29 CODE >21:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1236 text29 CODE >22:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1258 text29 CODE >23:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1274 text29 CODE >24:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+127C text29 CODE >25:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+12AE text29 CODE >26:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+12D0 text29 CODE >27:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+12EC text29 CODE >28:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+12F4 text29 CODE >29:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1326 text29 CODE >30:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1348 text29 CODE >31:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1364 text29 CODE >32:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+136C text29 CODE >33:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+139E text29 CODE >34:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+13BC text29 CODE >38:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+22FC text28 CODE >18:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+22FC text28 CODE >19:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2310 text28 CODE >20:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+231C text28 CODE >21:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2330 text28 CODE >22:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+233C text28 CODE >23:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2442 text27 CODE >14:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2442 text27 CODE >15:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2456 text27 CODE >16:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+246A text27 CODE >17:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2418 text26 CODE >9:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2418 text26 CODE >10:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+242C text26 CODE >11:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2440 text26 CODE >12:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2262 text25 CODE >18:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2262 text25 CODE >20:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2276 text25 CODE >21:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+227A text25 CODE >22:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+228E text25 CODE >23:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2292 text25 CODE >24:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2298 text25 CODE >25:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+22AA text25 CODE >26:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+22AE text25 CODE >27:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\so.c
+2104 text24 CODE >31:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2106 text24 CODE >32:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+211A text24 CODE >33:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+212E text24 CODE >34:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2132 text24 CODE >36:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2144 text24 CODE >37:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2158 text24 CODE >38:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+215C text24 CODE >39:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24FC text23 CODE >40:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24FE text23 CODE >41:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+250C text23 CODE >42:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2518 text23 CODE >43:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24B8 text22 CODE >25:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24BA text22 CODE >26:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24C4 text22 CODE >27:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24D8 text22 CODE >28:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24DC text22 CODE >29:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1CEC text21 CODE >72:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1CEC text21 CODE >73:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D00 text21 CODE >74:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D14 text21 CODE >75:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D18 text21 CODE >76:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D24 text21 CODE >78:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D32 text21 CODE >79:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D3E text21 CODE >80:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D4C text21 CODE >81:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D58 text21 CODE >82:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D66 text21 CODE >83:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D72 text21 CODE >85:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D80 text21 CODE >86:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D8C text21 CODE >88:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D92 text21 CODE >89:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D98 text21 CODE >90:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+1D9E text21 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+237C text20 CODE >44:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+237C text20 CODE >45:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+238E text20 CODE >46:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2398 text20 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+23AA text20 CODE >49:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+23B4 text20 CODE >51:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24DE text19 CODE >52:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24E0 text19 CODE >53:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24EE text19 CODE >54:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+24FA text19 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+220C text18 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+220C text18 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2214 text18 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2218 text18 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2234 text18 CODE >61:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2238 text18 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+2260 text18 CODE >63:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\lcd.c
+215E text17 CODE >34:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2160 text17 CODE >35:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2170 text17 CODE >36:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2174 text17 CODE >38:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2184 text17 CODE >39:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2188 text17 CODE >41:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+219A text17 CODE >42:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+219E text17 CODE >44:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21B0 text17 CODE >45:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21B4 text17 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+160C text16 CODE >50:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+160C text16 CODE >54:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1620 text16 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1634 text16 CODE >56:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1648 text16 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+165C text16 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1668 text16 CODE >62:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+166C text16 CODE >65:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1684 text16 CODE >66:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1698 text16 CODE >67:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+169C text16 CODE >68:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16A0 text16 CODE >71:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16B8 text16 CODE >72:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16CC text16 CODE >73:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16D0 text16 CODE >74:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16D4 text16 CODE >77:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+16EC text16 CODE >78:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1700 text16 CODE >79:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1704 text16 CODE >80:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1708 text16 CODE >83:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1720 text16 CODE >84:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1734 text16 CODE >85:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1738 text16 CODE >86:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+173C text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1746 text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1754 text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+175C text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1764 text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+176C text16 CODE >91:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+1776 text16 CODE >92:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+22B0 text15 CODE >70:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22B0 text15 CODE >71:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22BA text15 CODE >72:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22C4 text15 CODE >73:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22CE text15 CODE >74:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22D8 text15 CODE >75:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22F0 text15 CODE >76:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22F4 text15 CODE >77:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+22FA text15 CODE >78:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1778 text14 CODE >39:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1778 text14 CODE >40:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1794 text14 CODE >41:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+17BC text14 CODE >42:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+17D8 text14 CODE >43:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1804 text14 CODE >44:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1820 text14 CODE >45:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+184C text14 CODE >46:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1868 text14 CODE >47:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+1894 text14 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+18B0 text14 CODE >49:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+18DC text14 CODE >50:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+18DC text14 CODE >51:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+18E0 text14 CODE >52:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\io.c
+18E2 text13 CODE >30:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+18E2 text13 CODE >35:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+18EA text13 CODE >36:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1912 text13 CODE >38:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1940 text13 CODE >39:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+195E text13 CODE >40:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1984 text13 CODE >42:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19A2 text13 CODE >43:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19CC text13 CODE >45:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19D4 text13 CODE >46:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19EC text13 CODE >47:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19EE text13 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19F2 text13 CODE >49:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19F6 text13 CODE >50:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19FE text13 CODE >51:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+19FE text13 CODE >52:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1A0E text13 CODE >53:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1A16 text13 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1EE8 text12 CODE >20:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1EE8 text12 CODE >22:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1EF0 text12 CODE >23:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1F28 text12 CODE >24:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1F3C text12 CODE >26:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1F5C text12 CODE >28:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+1F5E text12 CODE >29:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+254A text11 CODE >8:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+254A text11 CODE >9:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+2552 text11 CODE >10:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\keypad.c
+20A2 text10 CODE >38:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20A2 text10 CODE >40:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20A6 text10 CODE >41:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20AA text10 CODE >42:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20BE text10 CODE >43:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20D0 text10 CODE >44:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20E2 text10 CODE >45:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20E4 text10 CODE >46:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20F6 text10 CODE >47:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20FA text10 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2100 text10 CODE >52:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2102 text10 CODE >53:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2040 text9 CODE >21:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2040 text9 CODE >23:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2044 text9 CODE >24:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2048 text9 CODE >25:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+205C text9 CODE >26:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+206E text9 CODE >27:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2080 text9 CODE >28:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2082 text9 CODE >29:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2094 text9 CODE >30:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2098 text9 CODE >31:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+209E text9 CODE >35:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+20A0 text9 CODE >36:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+1A18 text8 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A18 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A1C text8 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A2A text8 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A3A text8 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A3E text8 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A4C text8 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A5C text8 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A60 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A70 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A86 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A8A text8 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A8E text8 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A98 text8 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1A9A text8 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AA8 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AB2 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AD0 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AE0 text8 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AE2 text8 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AEC text8 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1AF2 text8 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1B02 text8 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1B12 text8 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+1B22 text8 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2492 text7 CODE >44:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2492 text7 CODE >48:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+24B6 text7 CODE >49:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+251A text6 CODE >51:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+251A text6 CODE >53:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+251C text6 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2520 text6 CODE >56:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2522 text6 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2526 text6 CODE >60:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2532 text6 CODE >61:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+1F60 text5 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F60 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F68 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F7A text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F7E text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F82 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F88 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F8A text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F98 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1F9E text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FB4 text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FBC text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FBE text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FC4 text5 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FCA text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FCA text5 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+1FD2 text5 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+246C text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+246C text4 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2478 text4 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2480 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2488 text4 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2490 text4 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1FD4 text3 CODE >24:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+1FD6 text3 CODE >31:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+1FF4 text3 CODE >33:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2010 text3 CODE >35:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2018 text3 CODE >37:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+2030 text3 CODE >39:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+203E text3 CODE >41:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\pwm.c
+21B6 text2 CODE >94:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21B6 text2 CODE >96:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21CA text2 CODE >97:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21DE text2 CODE >98:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+21F2 text2 CODE >99:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2206 text2 CODE >102:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+220A text2 CODE >104:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\ssd.c
+2554 text1 CODE >55:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\timer.c
+2554 text1 CODE >57:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\timer.c
+2558 text1 CODE >58:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\timer.c
+255A text1 CODE >59:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\timer.c
+656 text0 CODE >80:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+656 text0 CODE >81:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+65A text0 CODE >82:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+65E text0 CODE >83:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+662 text0 CODE >84:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+666 text0 CODE >85:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+66A text0 CODE >87:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+66E text0 CODE >90:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+672 text0 CODE >92:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+676 text0 CODE >94:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+67A text0 CODE >96:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+680 text0 CODE >97:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+694 text0 CODE >98:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6A0 text0 CODE >99:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6B4 text0 CODE >100:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6C0 text0 CODE >101:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6D4 text0 CODE >102:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6D8 text0 CODE >103:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6DC text0 CODE >106:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6E2 text0 CODE >107:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6E6 text0 CODE >108:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+6F8 text0 CODE >109:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+710 text0 CODE >114:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+716 text0 CODE >115:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+71A text0 CODE >116:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+72C text0 CODE >117:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+736 text0 CODE >122:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+74A text0 CODE >123:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+74E text0 CODE >124:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+752 text0 CODE >125:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+756 text0 CODE >126:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+75A text0 CODE >127:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+76E text0 CODE >128:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+77A text0 CODE >129:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+78E text0 CODE >130:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+79E text0 CODE >135:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+7B2 text0 CODE >136:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+7BE text0 CODE >137:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+7CA text0 CODE >138:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+7D0 text0 CODE >139:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+7D8 text0 CODE >140:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+804 text0 CODE >141:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+80A text0 CODE >142:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+838 text0 CODE >143:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+83E text0 CODE >145:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+870 text0 CODE >146:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+8A2 text0 CODE >147:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+8A6 text0 CODE >148:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+952 text0 CODE >149:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+972 text0 CODE >151:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+978 text0 CODE >152:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+97C text0 CODE >153:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+980 text0 CODE >157:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+988 text0 CODE >158:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+9B4 text0 CODE >159:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+9BA text0 CODE >160:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+9E6 text0 CODE >161:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+9EC text0 CODE >163:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+A1E text0 CODE >164:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+A22 text0 CODE >165:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+ACE text0 CODE >166:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+AEE text0 CODE >167:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+AF4 text0 CODE >168:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+AFE text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B08 text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B16 text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B1E text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B26 text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B2E text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B36 text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B3E text0 CODE >172:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B48 text0 CODE >173:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B4C text0 CODE >174:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B92 text0 CODE >175:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+B96 text0 CODE >176:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+C42 text0 CODE >177:C:\Users\Lucas\OneDrive\Área de Trabalho\Unifei\Matérias\2º Periodo\ECOP14\Projeto_simp.X\newmain.c
+2534 cinit CODE >1471:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2534 cinit CODE >1473:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2534 cinit CODE >1476:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2534 cinit CODE >1513:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2538 cinit CODE >1514:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+253A cinit CODE >1515:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+253A cinit CODE >1516:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+253C cinit CODE >1517:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+253E cinit CODE >1518:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2540 cinit CODE >1524:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2540 cinit CODE >1527:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2542 cinit CODE >1528:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2544 cinit CODE >1529:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+2546 cinit CODE >1530:C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pushNibble 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto_simp.X.production.o
+__Hspace_0 255E 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hspace_1 3A 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_lcdChar 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_lcdInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_lcdString 2262 0 CODE 0 text18 dist/default/production\Projeto_simp.X.production.o
+lcdCommand@value E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto_simp.X.production.o
+__size_of_lcdString 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto_simp.X.production.o
+__end_of_delayMicro 255E 0 CODE 0 text30 dist/default/production\Projeto_simp.X.production.o
+_ssdUpdate 160C 0 CODE 0 text16 dist/default/production\Projeto_simp.X.production.o
+_v0 35 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_v1 34 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_v2 33 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_v3 32 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+main@k 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+main@u 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+kpReadKey@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_User 620 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+_comp 1E50 0 CODE 0 text35 dist/default/production\Projeto_simp.X.production.o
+_keys 30 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_main 656 0 CODE 0 text0 dist/default/production\Projeto_simp.X.production.o
+_savP 22 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_savU 27 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+start 0 0 CODE 0 init C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+__end_of_timerInit 255C 0 CODE 0 text1 dist/default/production\Projeto_simp.X.production.o
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_comp 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_timerInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_lcdString 220C 0 CODE 0 text18 dist/default/production\Projeto_simp.X.production.o
+__size_of_lcdCommand 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pulseEnablePin 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+kpDebounce@i D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\Projeto_simp.X.production.o
+_kpDebounce 18E2 0 CODE 0 text13 dist/default/production\Projeto_simp.X.production.o
+___awmod@sign E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_timerInit 2554 0 CODE 0 text1 dist/default/production\Projeto_simp.X.production.o
+_lcdPosition 237C 0 CODE 0 text20 dist/default/production\Projeto_simp.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+intlevel0 0 0 CODE 0 text C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+intlevel1 0 0 CODE 0 text C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+intlevel2 0 0 CODE 0 text C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+intlevel3 0 0 CODE 0 text C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+_PulseEnClock 2418 0 CODE 0 text26 dist/default/production\Projeto_simp.X.production.o
+___aldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+kpDebounce@tempo 37 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_PulseClockData 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+pegaSenha@j 38 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Projeto_simp.X.production.o
+___aldiv@sign A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto_simp.X.production.o
+kpDebounce@newRead 2E 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_lcdChar 24FC 0 CODE 0 text19 dist/default/production\Projeto_simp.X.production.o
+__end_of_lcdInit 1DA0 0 CODE 0 text21 dist/default/production\Projeto_simp.X.production.o
+___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+_CCPR2L FBB 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_display 36 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto_simp.X.production.o
+__end_of___flge 1C28 0 CODE 0 text36 dist/default/production\Projeto_simp.X.production.o
+__end_of___wmul 2492 0 CODE 0 text4 dist/default/production\Projeto_simp.X.production.o
+__size_of_soWrite 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_digitalRead 18E2 0 CODE 0 text14 dist/default/production\Projeto_simp.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto_simp.X.production.o
+main@cnt 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_PulseEnClock 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto_simp.X.production.o
+__size_of_zeraKey 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_kpDebounce 1A18 0 CODE 0 text13 dist/default/production\Projeto_simp.X.production.o
+soWrite@value 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\Projeto_simp.X.production.o
+___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of___aldiv 1B24 0 CODE 0 text8 dist/default/production\Projeto_simp.X.production.o
+__end_of___awdiv 1CEC 0 CODE 0 text39 dist/default/production\Projeto_simp.X.production.o
+__end_of___awmod 1E50 0 CODE 0 text38 dist/default/production\Projeto_simp.X.production.o
+__end_of___fladd 1170 0 CODE 0 text37 dist/default/production\Projeto_simp.X.production.o
+__end_of___lwdiv 1FD4 0 CODE 0 text5 dist/default/production\Projeto_simp.X.production.o
+__size_of_ssdInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_pinMode 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___fladd@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___fladd@b 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_PulseEnClock 2442 0 CODE 0 text26 dist/default/production\Projeto_simp.X.production.o
+__end_of_kpReadKey 1F60 0 CODE 0 text12 dist/default/production\Projeto_simp.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\Projeto_simp.X.production.o
+start_initialization 2534 0 CODE 0 cinit dist/default/production\Projeto_simp.X.production.o
+__size_of_kpReadKey 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_limpaSSD 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_kpInit 23E8 0 CODE 0 text32 dist/default/production\Projeto_simp.X.production.o
+___aldiv@quotient B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_digitalWrite 1170 0 CODE 0 text29 dist/default/production\Projeto_simp.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_delayMicro 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+pinMode@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_kpReadKey 1EE8 0 CODE 0 text12 dist/default/production\Projeto_simp.X.production.o
+__end_of_pwmSet 2040 0 CODE 0 text3 dist/default/production\Projeto_simp.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+delayMili@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+delayMili@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pwmInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+pushByte@rs A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_soInit 237C 0 CODE 0 text33 dist/default/production\Projeto_simp.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Projeto_simp.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Projeto_simp.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Projeto_simp.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Projeto_simp.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Projeto_simp.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Projeto_simp.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Projeto_simp.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Projeto_simp.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Projeto_simp.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Projeto_simp.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto_simp.X.production.o
+__end_of_soWrite 22B0 0 CODE 0 text25 dist/default/production\Projeto_simp.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_simp.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto_simp.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Projeto_simp.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Projeto_simp.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Projeto_simp.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Projeto_simp.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Projeto_simp.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Projeto_simp.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Projeto_simp.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Projeto_simp.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Projeto_simp.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Projeto_simp.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Projeto_simp.X.production.o
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto_simp.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Projeto_simp.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Projeto_simp.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Projeto_simp.X.production.o
+__end_of_zeraKey 2554 0 CODE 0 text11 dist/default/production\Projeto_simp.X.production.o
+__size_of_digitalWrite 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+?_digitalRead 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_limpaSSD 22B0 0 CODE 0 text15 dist/default/production\Projeto_simp.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Projeto_simp.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Projeto_simp.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Projeto_simp.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Projeto_simp.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Projeto_simp.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Projeto_simp.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Projeto_simp.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Projeto_simp.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Projeto_simp.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Projeto_simp.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto_simp.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_simp.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto_simp.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Projeto_simp.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Projeto_simp.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Projeto_simp.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Projeto_simp.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Projeto_simp.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Projeto_simp.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Projeto_simp.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Projeto_simp.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Projeto_simp.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Projeto_simp.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Projeto_simp.X.production.o
+__end_of_ssdInit 220C 0 CODE 0 text2 dist/default/production\Projeto_simp.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto_simp.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto_simp.X.production.o
+__end_of_pinMode 160C 0 CODE 0 text34 dist/default/production\Projeto_simp.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Projeto_simp.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Projeto_simp.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\Projeto_simp.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto_simp.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto_simp.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\Projeto_simp.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Projeto_simp.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Projeto_simp.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Projeto_simp.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\Projeto_simp.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto_simp.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto_simp.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\Projeto_simp.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Projeto_simp.X.production.o
+__end_of_limpaSSD 22FC 0 CODE 0 text15 dist/default/production\Projeto_simp.X.production.o
+___flge 1B24 0 CODE 0 text36 dist/default/production\Projeto_simp.X.production.o
+___wmul 246C 0 CODE 0 text4 dist/default/production\Projeto_simp.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Projeto_simp.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Projeto_simp.X.production.o
+_PR2 FCB 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__S0 255E 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__S1 3A 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_digitalWrite 13BE 0 CODE 0 text29 dist/default/production\Projeto_simp.X.production.o
+__size_of_digitalRead 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_pwmFrequency 2492 0 CODE 0 text7 dist/default/production\Projeto_simp.X.production.o
+__end_of_lcdPosition 23B6 0 CODE 0 text20 dist/default/production\Projeto_simp.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto_simp.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto_simp.X.production.o
+kpDebounce@oldRead 2C 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_charKey 61B 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_pulseEnablePin 22FC 0 CODE 0 text28 dist/default/production\Projeto_simp.X.production.o
+pushByte@value D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Projeto_simp.X.production.o
+__size_of_kpDebounce 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_pushNibble 24B8 0 CODE 0 text22 dist/default/production\Projeto_simp.X.production.o
+_lcdChar 24DE 0 CODE 0 text19 dist/default/production\Projeto_simp.X.production.o
+_lcdInit 1CEC 0 CODE 0 text21 dist/default/production\Projeto_simp.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Projeto_simp.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_simp.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Projeto_simp.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Projeto_simp.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Projeto_simp.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Projeto_simp.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Projeto_simp.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Projeto_simp.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Projeto_simp.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Projeto_simp.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Projeto_simp.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Projeto_simp.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Projeto_simp.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Projeto_simp.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Projeto_simp.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Projeto_simp.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Projeto_simp.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Projeto_simp.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Projeto_simp.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Projeto_simp.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\Projeto_simp.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\Projeto_simp.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\Projeto_simp.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\Projeto_simp.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\Projeto_simp.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\Projeto_simp.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\Projeto_simp.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\Projeto_simp.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\Projeto_simp.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\Projeto_simp.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\Projeto_simp.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\Projeto_simp.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\Projeto_simp.X.production.o
+__end_of_pwmInit 2534 0 CODE 0 text6 dist/default/production\Projeto_simp.X.production.o
+_kpInit 23B6 0 CODE 0 text32 dist/default/production\Projeto_simp.X.production.o
+___awmod@counter D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pwmFrequency 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_PulseClockData 2442 0 CODE 0 text27 dist/default/production\Projeto_simp.X.production.o
+___fladd@signs D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__ptext10 20A2 0 CODE 0 text10 dist/default/production\Projeto_simp.X.production.o
+__ptext11 254A 0 CODE 0 text11 dist/default/production\Projeto_simp.X.production.o
+__ptext12 1EE8 0 CODE 0 text12 dist/default/production\Projeto_simp.X.production.o
+__ptext13 18E2 0 CODE 0 text13 dist/default/production\Projeto_simp.X.production.o
+__ptext14 1778 0 CODE 0 text14 dist/default/production\Projeto_simp.X.production.o
+__ptext15 22B0 0 CODE 0 text15 dist/default/production\Projeto_simp.X.production.o
+__ptext16 160C 0 CODE 0 text16 dist/default/production\Projeto_simp.X.production.o
+__ptext17 215E 0 CODE 0 text17 dist/default/production\Projeto_simp.X.production.o
+__ptext18 220C 0 CODE 0 text18 dist/default/production\Projeto_simp.X.production.o
+__ptext19 24DE 0 CODE 0 text19 dist/default/production\Projeto_simp.X.production.o
+__ptext20 237C 0 CODE 0 text20 dist/default/production\Projeto_simp.X.production.o
+__ptext21 1CEC 0 CODE 0 text21 dist/default/production\Projeto_simp.X.production.o
+__ptext22 24B8 0 CODE 0 text22 dist/default/production\Projeto_simp.X.production.o
+__ptext23 24FC 0 CODE 0 text23 dist/default/production\Projeto_simp.X.production.o
+__ptext24 2104 0 CODE 0 text24 dist/default/production\Projeto_simp.X.production.o
+__ptext25 2262 0 CODE 0 text25 dist/default/production\Projeto_simp.X.production.o
+__ptext26 2418 0 CODE 0 text26 dist/default/production\Projeto_simp.X.production.o
+__ptext27 2442 0 CODE 0 text27 dist/default/production\Projeto_simp.X.production.o
+__ptext28 22FC 0 CODE 0 text28 dist/default/production\Projeto_simp.X.production.o
+__ptext29 1170 0 CODE 0 text29 dist/default/production\Projeto_simp.X.production.o
+__ptext30 255C 0 CODE 0 text30 dist/default/production\Projeto_simp.X.production.o
+__ptext31 23E8 0 CODE 0 text31 dist/default/production\Projeto_simp.X.production.o
+__ptext32 23B6 0 CODE 0 text32 dist/default/production\Projeto_simp.X.production.o
+__ptext33 233E 0 CODE 0 text33 dist/default/production\Projeto_simp.X.production.o
+__ptext34 13BE 0 CODE 0 text34 dist/default/production\Projeto_simp.X.production.o
+__ptext35 1E50 0 CODE 0 text35 dist/default/production\Projeto_simp.X.production.o
+__ptext36 1B24 0 CODE 0 text36 dist/default/production\Projeto_simp.X.production.o
+__ptext37 CB0 0 CODE 0 text37 dist/default/production\Projeto_simp.X.production.o
+__ptext38 1DA0 0 CODE 0 text38 dist/default/production\Projeto_simp.X.production.o
+__ptext39 1C28 0 CODE 0 text39 dist/default/production\Projeto_simp.X.production.o
+pwmSet@porcento A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___aldiv 1A18 0 CODE 0 text8 dist/default/production\Projeto_simp.X.production.o
+___awdiv 1C28 0 CODE 0 text39 dist/default/production\Projeto_simp.X.production.o
+___awmod 1DA0 0 CODE 0 text38 dist/default/production\Projeto_simp.X.production.o
+___fladd CB0 0 CODE 0 text37 dist/default/production\Projeto_simp.X.production.o
+___lwdiv 1F60 0 CODE 0 text5 dist/default/production\Projeto_simp.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto_simp.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Projeto_simp.X.production.o
+ssdDigit@pos F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+ssdDigit@val 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+pwmSet@val B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Projeto_simp.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Projeto_simp.X.production.o
+_pwmSet 1FD4 0 CODE 0 text3 dist/default/production\Projeto_simp.X.production.o
+_lcdCommand 24FC 0 CODE 0 text23 dist/default/production\Projeto_simp.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+main@conf 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto_simp.X.production.o
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_soInit 233E 0 CODE 0 text33 dist/default/production\Projeto_simp.X.production.o
+__end_of_pwmFrequency 24B8 0 CODE 0 text7 dist/default/production\Projeto_simp.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto_simp.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+__end_of_pulseEnablePin 233E 0 CODE 0 text28 dist/default/production\Projeto_simp.X.production.o
+__size_of_pushByte 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+stackhi 5FF 0 ABS 0 - C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+stacklo 80 0 ABS 0 - C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+pinMode@type 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\Projeto_simp.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Projeto_simp.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Projeto_simp.X.production.o
+___fladd@grs 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_kpInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__size_of_ssdDigit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_pushNibble 24DE 0 CODE 0 text22 dist/default/production\Projeto_simp.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_pegaSenha 2104 0 CODE 0 text10 dist/default/production\Projeto_simp.X.production.o
+__pbssCOMRAM 22 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+___flge@ff1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___flge@ff2 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pegaSenha 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_PulseClockData 246C 0 CODE 0 text27 dist/default/production\Projeto_simp.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+end_of_initialization 2540 0 CODE 0 cinit dist/default/production\Projeto_simp.X.production.o
+lcdChar@value E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+delayMicro@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto_simp.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Projeto_simp.X.production.o
+__size_of_pwmSet 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+digitalWrite@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+?___aldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+?___awmod 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+?___fladd 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_pegaUser 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\Projeto_simp.X.production.o
+digitalRead@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_delayMili 2418 0 CODE 0 text31 dist/default/production\Projeto_simp.X.production.o
+_pegaSenha 20A2 0 CODE 0 text10 dist/default/production\Projeto_simp.X.production.o
+___awmod@dividend 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_soInit 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Projeto_simp.X.production.o
+__size_of_delayMili 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto_simp.X.production.o
+__pcinit 2534 0 CODE 0 cinit dist/default/production\Projeto_simp.X.production.o
+__end_of_lcdCommand 251A 0 CODE 0 text23 dist/default/production\Projeto_simp.X.production.o
+_soWrite 2262 0 CODE 0 text25 dist/default/production\Projeto_simp.X.production.o
+__ptext0 656 0 CODE 0 text0 dist/default/production\Projeto_simp.X.production.o
+__ptext1 2554 0 CODE 0 text1 dist/default/production\Projeto_simp.X.production.o
+__ptext2 21B6 0 CODE 0 text2 dist/default/production\Projeto_simp.X.production.o
+__ptext3 1FD4 0 CODE 0 text3 dist/default/production\Projeto_simp.X.production.o
+__ptext4 246C 0 CODE 0 text4 dist/default/production\Projeto_simp.X.production.o
+__ptext5 1F60 0 CODE 0 text5 dist/default/production\Projeto_simp.X.production.o
+__ptext6 251A 0 CODE 0 text6 dist/default/production\Projeto_simp.X.production.o
+__ptext7 2492 0 CODE 0 text7 dist/default/production\Projeto_simp.X.production.o
+__ptext8 1A18 0 CODE 0 text8 dist/default/production\Projeto_simp.X.production.o
+__ptext9 2040 0 CODE 0 text9 dist/default/production\Projeto_simp.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Projeto_simp.X.production.o
+lcdPosition@col 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Projeto_simp.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Projeto_simp.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Projeto_simp.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Projeto_simp.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Projeto_simp.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Projeto_simp.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Projeto_simp.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Projeto_simp.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Projeto_simp.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Projeto_simp.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Projeto_simp.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Projeto_simp.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Projeto_simp.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Projeto_simp.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Projeto_simp.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Projeto_simp.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Projeto_simp.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Projeto_simp.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Projeto_simp.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Projeto_simp.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Projeto_simp.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Projeto_simp.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Projeto_simp.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Projeto_simp.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Projeto_simp.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\Projeto_simp.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Projeto_simp.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Projeto_simp.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Projeto_simp.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Projeto_simp.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\Lucas\AppData\Local\Temp\xcAsb8k.o
+___aldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__size_of_lcdPosition 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_pushByte 2104 0 CODE 0 text24 dist/default/production\Projeto_simp.X.production.o
+_zeraKey 254A 0 CODE 0 text11 dist/default/production\Projeto_simp.X.production.o
+lcdString@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\Projeto_simp.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto_simp.X.production.o
+___fladd@aexp E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___fladd@bexp F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_ssdInit 21B6 0 CODE 0 text2 dist/default/production\Projeto_simp.X.production.o
+_ssdDigit 215E 0 CODE 0 text17 dist/default/production\Projeto_simp.X.production.o
+_delayMili 23E8 0 CODE 0 text31 dist/default/production\Projeto_simp.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Projeto_simp.X.production.o
+_pinMode 13BE 0 CODE 0 text34 dist/default/production\Projeto_simp.X.production.o
+__end_of_pushByte 215E 0 CODE 0 text24 dist/default/production\Projeto_simp.X.production.o
+_digitalRead 1778 0 CODE 0 text14 dist/default/production\Projeto_simp.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto_simp.X.production.o
+__end_of__initialization 2540 0 CODE 0 cinit dist/default/production\Projeto_simp.X.production.o
+lcdString@msg F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___awmod@divisor B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_ssdDigit 21B6 0 CODE 0 text17 dist/default/production\Projeto_simp.X.production.o
+pwmFrequency@freq F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto_simp.X.production.o
+lcdPosition@line F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+pushNibble@rs A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto_simp.X.production.o
+limpaSSD@k 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_pegaUser 2040 0 CODE 0 text9 dist/default/production\Projeto_simp.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+___aldiv@counter 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__end_of_pegaUser 20A2 0 CODE 0 text9 dist/default/production\Projeto_simp.X.production.o
+_charKey 611 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+__end_of_User 625 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+__end_of_comp 1EE8 0 CODE 0 text35 dist/default/production\Projeto_simp.X.production.o
+__end_of_main CB0 0 CODE 0 text0 dist/default/production\Projeto_simp.X.production.o
+_delayMicro 255C 0 CODE 0 text30 dist/default/production\Projeto_simp.X.production.o
+__end_of_Passw 620 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_PORTE F84 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_Passw 61B 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_T2CON FCA 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TMR0H FD7 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__end_of_valor 611 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Projeto_simp.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Projeto_simp.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Projeto_simp.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Projeto_simp.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Projeto_simp.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Projeto_simp.X.production.o
+_valor 601 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+_CCP2CON FBA 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+soWrite@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+_pwmInit 251A 0 CODE 0 text6 dist/default/production\Projeto_simp.X.production.o
+__initialization 2534 0 CODE 0 cinit dist/default/production\Projeto_simp.X.production.o
+comp@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+comp@c 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+pegaUser@i 39 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto_simp.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Hsmallconst 656 0 SMALLCONST 0 smallconst dist/default/production\Projeto_simp.X.production.o
+pushNibble@value C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Projeto_simp.X.production.o
+__end_of_ssdUpdate 1778 0 CODE 0 text16 dist/default/production\Projeto_simp.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto_simp.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\Projeto_simp.X.production.o
+__size_of_ssdUpdate 0 0 ABS 0 - dist/default/production\Projeto_simp.X.production.o
+digitalWrite@value 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto_simp.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text0 0 656 656 1F08 1
+cstackCOMRAM 1 1 1 39 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 56 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
